@@ -2,7 +2,7 @@ body {
     display: flex;
     position: absolute;
     flex-direction: column;
-    height: 560%;
+    height: 560vh;
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -626,6 +626,10 @@ body {
     text-decoration: none;
     color: #ffffff;
     margin: auto;
+}
+
+#minipag-click_footer, #paginadeinicio-click_footer{
+    cursor: pointer;
 }
 
 .section-5{
