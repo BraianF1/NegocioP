@@ -75,16 +75,17 @@ pagEst.addEventListener("mouseleave", ()=>{
 
 //SCROOL MIN PAG, PAG EST
 
+let minPagFooter = document.getElementById('minipag-click_footer');
+let pagEstFooter = document.getElementById('paginadeinicio-click_footer');
+
 let minPagDiv = document.getElementById('minipag-div');
 let pagEstDiv = document.getElementById('paginadeinicio-div');
 
-minPag.addEventListener("click", ()=>{
-    minPagDiv.scrollIntoView({behavior:"smooth"});
-});
+minPag.addEventListener("click", ()=>{minPagDiv.scrollIntoView({behavior:"smooth"});});
+pagEst.addEventListener("click", ()=>{pagEstDiv.scrollIntoView({behavior:"smooth"});});
 
-pagEst.addEventListener("click", ()=>{
-    pagEstDiv.scrollIntoView({behavior:"smooth"});
-});
+minPagFooter.addEventListener("click", ()=>{minPagDiv.scrollIntoView({behavior:"smooth"});});
+pagEstFooter.addEventListener("click", ()=>{pagEstDiv.scrollIntoView({behavior:"smooth"});});
 
 //PROYECTOS
 
