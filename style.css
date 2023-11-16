@@ -878,6 +878,10 @@ body {
 }
 
 @media (max-width:623px){
+    body{
+        height: 580vh;
+    }
+
     .section-1 div h2{
         font-size: 8rem;
     }
