@@ -753,8 +753,9 @@ body {
     }
 
     .circulo-2{
-        height: 350px;
-        width: 350px;
+        height: 500px;
+        width: 500px;
+        margin: 10px;
     }
 
     .section_2-info{
