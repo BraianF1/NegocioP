@@ -153,6 +153,7 @@ body {
 .section-2 {
     display: flex;
     position: relative;
+    background-color: #0f1723;
     height: 100%;
     width: 100%;
 }
@@ -175,13 +176,13 @@ body {
     outline: 2px solid #000000;
     margin: auto;
     height: 100%;
-    width: 80%;
+    width: 90%;
 }
 
 .section_2-titulo {
     display: flex;
     position: relative;
-    color: #000000;
+    color: #ffffff;
     font-size: 6em;
     /* width: 100%; */
     padding: 60px;
@@ -352,7 +353,7 @@ body {
     /* outline: 2px solid black; */
     margin: auto;
     height: 100%;
-    width: 80%;
+    width: 90%;
 }
 
 .servicio-info{
@@ -449,7 +450,7 @@ body {
     position: relative;
     flex-direction: column;
     height: 100%;
-    width: 80%;
+    width: 90%;
 }
 
 .section_5-divs{
@@ -542,7 +543,7 @@ body {
     display: flex;
     position: relative;
     height: 100%;
-    width: 80%;
+    width: 90%;
     outline: 2px solid black;
 }
 
@@ -805,7 +806,8 @@ body {
         flex-direction: column-reverse;
     }
     .servicio-info {
-        width: 70%;
+        width: 97%;
+        height: 30%;
     }
 
     .section_2-info{
@@ -961,8 +963,8 @@ body {
         font-size: 3.5em;
     }
 
-    .section_2-description div p{
-        font-size: 1rem;
+    .section_2-description{
+        height: 500px;
     }
 
     .section_2-info p{
@@ -971,6 +973,20 @@ body {
 
     .section_2-info a{
         font-size: 1.5em;
+    }
+
+    .circulos{
+        height: 800px;
+    }
+
+    .circulo-2{
+        margin: 0px;
+    }
+
+    .circulo-3{
+        height: 250px;
+        width: 250px;
+        top: 55%;
     }
 
     .servicio div{
