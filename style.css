@@ -724,9 +724,12 @@ body {
 @media (max-width: 1360px){
 
     /* SECTION 2 INFO */
+    
+
     .section_2-info{
         width: 50%;
         }
+
     .section_2-info h3{
         font-size: 30px;
     }
@@ -749,6 +752,10 @@ body {
 }
 
 @media (max-width:1270px){
+    .section-2{
+    border-top: 4px solid #fff;
+    }
+
     .section_2-div{
         width: 100%;
     }

@@ -34,6 +34,22 @@ bars.addEventListener("click",()=>{
     }
 });
 
+//-----------------SCROOL ANIMATION-------------//
+
+// let section1 = document.querySelector('.section-1');
+
+// section1.addEventListener('scroll', ()=>{
+//     let elementoOculto = document.querySelector('');
+//     let distanciaSuperior = elementoOculto.getBoundingClientRect().top;
+//     let alturaVentana = window.innerHeight;
+
+//     if (distanciaSuperior<alturaVentana) {
+//         elementoOculto.style.display = 'block';
+//     }
+// });
+
+
+
 //-----DESPLAZAMIENTO DE LA BARRA
 
 const des = (elemento)=>{
@@ -59,19 +75,17 @@ let pagEst = document.getElementById('paginadeinicio-click');
 let minPagImg = document.getElementById("minipag-img");
 let pagEstImg = document.getElementById('paginadeinicio-img');
 
-minPag.addEventListener("mouseenter", ()=>{
-    minPagImg.style.transform = "scale(1.2)";
-});
-minPag.addEventListener("mouseleave", ()=>{
-    minPagImg.style.transform = "scale(1)";
-});
+const pagMinEst = (r,s)=>{
+    r.addEventListener("mouseenter", ()=>{
+        s.style.transform = "scale(1.1)";
+    });
+    r.addEventListener("mouseleave", ()=>{
+        s.style.transform = "scale(1)";
+    });
+}
 
-pagEst.addEventListener("mouseenter", ()=>{
-    pagEstImg.style.transform = "scale(1.2)";
-});
-pagEst.addEventListener("mouseleave", ()=>{
-    pagEstImg.style.transform = "scale(1)";
-});
+pagMinEst(minPag,minPagImg);
+pagMinEst(pagEst,pagEstImg);
 
 //SCROOL MIN PAG, PAG EST
 
@@ -89,8 +103,6 @@ pagEstFooter.addEventListener("click", ()=>{pagEstDiv.scrollIntoView({behavior:"
 
 //PROYECTOS
 
-
-
 let negociodiv = document.querySelector(".proyectos_div-1");
 let negocioHover = document.getElementById("negocio-hover");
 
@@ -103,30 +115,12 @@ let inmobiliariaImg = document.getElementById('inmobiliaria-hover');
 let comercio = document.querySelector('.proyectos_div-4');
 let comercioImg = document.getElementById('comercio-hover');
 
-negociodiv.addEventListener("mouseenter", ()=>{
-    negocioHover.style.transform = "scale(1.1)";
-});
-negociodiv.addEventListener("mouseleave", ()=>{
-    negocioHover.style.transform = "scale(1)";
-});
+const hoverS = (r,s)=>{
+    r.addEventListener("mouseenter", ()=>{ s.style.transform = "scale(1.1)";});
+    r.addEventListener("mouseleave", ()=>{s.style.transform = "scale(1)"; });
+}
 
-restaurant.addEventListener("mouseenter", ()=>{
-    restaurantimg.style.transform = "scale(1.1)";
-});
-restaurant.addEventListener("mouseleave", ()=>{
-    restaurantimg.style.transform = "scale(1)";
-});
-
-inmobiliaria.addEventListener("mouseenter", ()=>{
-    inmobiliariaImg.style.transform = "scale(1.1)";
-});
-inmobiliaria.addEventListener("mouseleave", ()=>{
-    inmobiliariaImg.style.transform = "scale(1)";
-});
-
-comercio.addEventListener("mouseenter", ()=>{
-    comercioImg.style.transform = "scale(1.1)";
-});
-comercio.addEventListener("mouseleave", ()=>{
-    comercioImg.style.transform = "scale(1)";
-});
+hoverS(negociodiv,negocioHover);
+hoverS(restaurant,restaurantimg);
+hoverS(inmobiliaria,inmobiliariaImg);
+hoverS(comercio,comercioImg);
